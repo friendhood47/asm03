@@ -1,0 +1,306 @@
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+
+  /* code phần Banner */
+  #banner {
+    position: relative;
+  }
+
+  .banner-picture {
+    position: relative;
+    width: 100%;
+    height: 30%px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    filter: brightness(0.6);
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  /* code phần Navbar*/
+  #nav-bar {
+    background-color: #f7f7f7;
+  }
+
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-bar a {
+    padding: 5px 0px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    text-align: left;
+    border: none;
+  }
+
+  #nav-bar i {
+    color: rgb(91, 91, 199);
+  }
+
+  #nav-bar .content {
+    display: none;
+  }
+
+  .profile-img {
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+  }
+
+  /* code phần Thông tin cá nhân */
+  #about .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  #target {
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+    padding-right: 35px;
+  }
+
+  #target p {
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  #personal-info {
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    background-color: rgb(231, 228, 224);
+  }
+
+  #personal-info ul {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
+  #personal-info i {
+    color: rgb(91, 91, 199);
+  }
+
+  /* code phần Thông tin nghề nghiệp */
+  #job-info .container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 25px;
+  }
+
+  .biography {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 70px auto;
+    border: 1px solid rgba(194, 184, 184, 0.467);
+  }
+
+  .biography h2 {
+    padding: 15px;
+  }
+
+  .biography i {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .biography-content {
+    padding: 30px 30px 20px 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    height: 28px;
+  }
+
+  .timeline p {
+    padding: 5px;
+    font-style: italic;
+  }
+
+  .present {
+    color: #f7f7f7;
+    background-color: #199cdb;
+    padding: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 25%;
+    margin: 0px;
+  }
+
+  .hobbies {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 55px 55px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 30px 30px 20px 20px;
+  }
+
+  .hobbies i {
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20px;
+    color: #199cdb;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .hobbies p {
+    text-align: center;
+  }
+
+  span {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+  }
+
+  /* code phần Chứng chỉ-Giải thưởng */
+  #certificate .container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ff9100c0;
+  }
+
+  .certificate-img1 {
+    width: 100%;
+  }
+
+  .certificate-img2 {
+    width: 100%;
+    padding-left: 0px;
+    border-left: none;
+  }
+
+  .certificate-container b {
+    margin-left: 20px;
+  }
+
+  /* code phần  Dự án */
+  #project .container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+  }
+
+  #project h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .project-container {
+    margin-top: 50px;
+    border-left: 1px solid #d1ccccc0;
+    border-right: 1px solid #d1ccccc0;
+    overflow: auto;
+  }
+
+  .project-img {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid #d1ccccc0;
+  }
+
+  .project-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #0a0a0ac0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .project-details p {
+    padding: 5px;
+    margin: 0px;
+  }
+
+  .project-container td {
+    border-top: 1px solid #0a0a0ac0;
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  .project-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #0a0a0ac0;
+  }
+
+  /* code phần Liên hệ */
+  #footer .container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 21% 21% 21%;
+    grid-column-gap: 5%;
+    justify-content: center;
+  }
+
+  #footer a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    color: #949090c0;
+  }
+
+  #footer i {
+    color: #199cdb;
+    font-size: 100%;
+  }
+}
